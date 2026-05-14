@@ -1,0 +1,303 @@
+grace:
+  activation-radius: 3.0
+
+visual-effects:
+  enabled: true
+  grace:
+    discovery: true
+    activation: true
+  dodge-trail: true
+  level-up: true
+  flasks:
+    crimson: true
+    cerulean: true
+
+bosses:
+  enabled: true
+  remembrance-station:
+    material: LODESTONE
+  portals-defaults:
+    require-boss-death-to-exit: false
+  spawns: {}
+  portals: {}
+  # example:
+  # spawns:
+  #   limgrave_tree_sentinel:
+  #     boss-id: tree_sentinel
+  #     world: world
+  #     x: 100.5
+  #     y: 65.0
+  #     z: -40.5
+  #     yaw: 0.0
+  #     pitch: 0.0
+  # portals:
+  #   limgrave_tree_portal:
+  #     boss-id: tree_sentinel
+  #     require-boss-death-to-exit: true
+  #     width: 2.6
+  #     height: 3.4
+  #     entrance:
+  #       world: world
+  #       x: 120.5
+  #       y: 64.0
+  #       z: -35.5
+  #       yaw: 180.0
+  #       pitch: 0.0
+  #     exit:
+  #       world: world
+  #       x: 120.5
+  #       y: 64.0
+  #       z: -29.5
+  #       yaw: 180.0
+  #       pitch: 0.0
+
+runes:
+  drop:
+    material: RECOVERY_COMPASS
+  actionbar:
+    enabled: true
+    interval-ticks: 40
+
+smithing:
+  anvil-material: CHIPPED_ANVIL
+
+items:
+  custom-model-data:
+    weapons: {astrologers_staff: 1, short_spear: 2}
+    armor: {}
+    spells: {}
+    ashes: {}
+    spirit-ashes: {}
+    talismans: {}
+    flasks:
+      crimson: 0
+      cerulean: 0
+    torrent:
+      whistle: 0
+      raisins:
+        rowa: 0
+        sweet: 0
+        frozen: 0
+    runes:
+      drop: 0
+
+combat:
+  enabled: true
+  stamina:
+    max: 100.0
+    regen-per-second: 20.0
+    regen-delay-ticks: 30
+    use-for-attacks: true
+    attack-cost: 7.0
+    block-attack-when-empty: true
+  hunger:
+    disable-vanilla: true
+    food-level: 20
+    saturation: 20.0
+    show-as-stamina-bar: true
+    show-xp-bar: false
+    use-stamina-for-sprint: true
+    sprint-cost-per-second: 10.0
+    food-stamina:
+      enabled: true
+      base-amount: 8.0
+      high-quality-multiplier: 1.5
+      high-quality-food:
+        - GOLDEN_CARROT
+        - COOKED_BEEF
+        - COOKED_PORKCHOP
+        - COOKED_CHICKEN
+        - COOKED_MUTTON
+        - COOKED_SALMON
+        - COOKED_COD
+        - BAKED_POTATO
+  weapon-types:
+    attack-cost-multiplier:
+      DAGGER: 0.65
+      STRAIGHT_SWORD: 0.9
+      THRUSTING_SWORD: 0.9
+      GREATSWORD: 1.3
+      KATANA: 0.9
+      AXE: 1.0
+      GREATAXE: 1.4
+      SPEAR: 1.0
+      HALBERD: 1.05
+      TWINBLADE: 1.05
+      STAFF: 0.8
+      SHIELD: 1.4
+      BOW: 1.05
+      CROSSBOW: 1.05
+    cooldown-ticks:
+      DAGGER: 6
+      STRAIGHT_SWORD: 9
+      THRUSTING_SWORD: 9
+      GREATSWORD: 15
+      KATANA: 9
+      AXE: 11
+      GREATAXE: 17
+      SPEAR: 11
+      HALBERD: 12
+      TWINBLADE: 12
+      STAFF: 12
+      SHIELD: 12
+      BOW: 11
+      CROSSBOW: 11
+    range:
+      DAGGER: 2.5
+      STRAIGHT_SWORD: 3.0
+      THRUSTING_SWORD: 3.2
+      GREATSWORD: 3.6
+      KATANA: 3.0
+      AXE: 3.0
+      GREATAXE: 3.4
+      SPEAR: 4.2
+      HALBERD: 4.2
+      TWINBLADE: 3.2
+      STAFF: 3.2
+      SHIELD: 3.2
+      BOW: 12.0
+      CROSSBOW: 12.0
+  jump-attacks:
+    damage-multiplier:
+      DAGGER: 1.1
+      STRAIGHT_SWORD: 1.2
+      THRUSTING_SWORD: 1.2
+      GREATSWORD: 1.32
+      KATANA: 1.2
+      AXE: 1.2
+      GREATAXE: 1.32
+      SPEAR: 1.18
+      HALBERD: 1.18
+      TWINBLADE: 1.18
+      STAFF: 1.18
+      SHIELD: 1.18
+      BOW: 1.05
+      CROSSBOW: 1.05
+  poise:
+    base-threshold: 100.0
+    max-health-factor: 0.35
+    decay-per-second: 10.0
+    jump-attack-multiplier: 1.45
+    stagger-duration-ticks: 30
+    weapon-type-damage:
+      DAGGER: 10.0
+      STRAIGHT_SWORD: 14.0
+      THRUSTING_SWORD: 14.0
+      GREATSWORD: 24.0
+      KATANA: 14.0
+      AXE: 16.0
+      GREATAXE: 28.0
+      SPEAR: 16.0
+      HALBERD: 18.0
+      TWINBLADE: 18.0
+      STAFF: 18.0
+      SHIELD: 18.0
+      BOW: 16.0
+      CROSSBOW: 16.0
+  dodge:
+    cost: 35.0
+    cooldown-ticks: 14
+    horizontal-velocity: 1.1
+    vertical-velocity: 0.12
+  iframes:
+    enabled: true
+    duration-ticks: 8
+    blocked-causes:
+      - ENTITY_ATTACK
+      - PROJECTILE
+
+compass:
+  enabled: true
+  show-intercardinal: true
+  update-interval-ticks: 2
+  bossbar:
+    color: YELLOW
+    style: SOLID
+
+mounts:
+  torrent:
+    max-health: 30.0
+    movement-speed: 0.33
+    jump-strength: 0.9
+    protect-from-damage: true
+    show-name: true
+    fall:
+      fatal-distance: 14.0
+    whistle:
+      auto-give: false
+      cooldown-ticks: 20
+    revive:
+      confirm-window-ticks: 60
+    air-jump:
+      forward-boost: 0.75
+      vertical-boost: 0.65
+    spirit-spring:
+      radius: 1
+      named-trigger-radius: 2.25
+      launch-cooldown-ticks: 12
+      materials:
+        - BUBBLE_COLUMN
+      forward-boost: 0.35
+      vertical-boost: 1.45
+      visuals:
+        ambient-period-ticks: 2
+        ambient-sound-period-ticks: 80
+        base-height: 0.15
+        burst-height: 0.2
+        inner-radius: 0.55
+        outer-radius: 1.0
+        column-height: 2.15
+    healing:
+      rowa: 6.0
+      sweet: 10.0
+      frozen: 14.0
+
+flasks:
+  auto-give: true
+  cooldown-ticks: 20
+  drink-animation:
+    enabled: true
+  crimson:
+    max-charges: 4
+    heal-hp: 8.0
+  cerulean:
+    max-charges: 2
+    restore-fp: 25.0
+
+classes:
+  auto-assign-default: false
+  default-class: wretch
+  allow-change: true
+
+spirit-springs: {}
+# example:
+# spirit-springs:
+#   stormhill_cliff:
+#     display-name: Stormhill Cliff
+#     world: world
+#     x: 120.5
+#     y: 72.0
+#     z: -44.5
+
+levels:
+  max-level: 713
+  max-attribute: 99
+  mind-max-focus-bonus: 60.0
+  endurance-max-stamina-bonus: 80.0
+  strength-max-attack-bonus: 0.35
+  strength-max-defense-reduction: 0.18
+  dexterity-max-attack-bonus: 0.30
+  dexterity-max-fall-reduction: 0.25
+  dexterity-max-cast-speed-bonus: 0.20
+  intelligence-max-attack-bonus: 0.32
+  intelligence-max-magic-reduction: 0.25
+  intelligence-max-cast-speed-bonus: 0.25
+  faith-max-attack-bonus: 0.32
+  faith-max-cast-speed-bonus: 0.25
+  arcane-max-attack-bonus: 0.30
+  arcane-max-holy-reduction: 0.22
+  arcane-max-death-reduction: 0.20
+  arcane-max-status-buildup-bonus: 0.35
+  arcane-max-cast-speed-bonus: 0.18
+
+graces: {}

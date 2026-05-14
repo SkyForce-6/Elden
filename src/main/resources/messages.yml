@@ -1,0 +1,11 @@
+language: en
+english-only: true
+
+messages:
+  plugin:
+    prefix: "[Elden]"
+    language_locked: "This plugin supports English only."
+  general:
+    no_permission: "You do not have permission."
+    player_not_found: "Player not found."
+    players_only: "Only players can use this command."

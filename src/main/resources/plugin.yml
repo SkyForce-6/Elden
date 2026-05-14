@@ -1,0 +1,148 @@
+name: Elden
+version: "${version}"
+
+main: de.skyforce.main.elden.Elden
+api-version: '26.1.2'
+load: POSTWORLD
+
+commands:
+  grace:
+    description: Manage and attune Sites of Grace
+    usage: /grace <set|remove|list|activate|warp|info>
+  runes:
+    description: View or manage runes
+    usage: /runes [add|set]
+  eldenclass:
+    description: Choose or inspect your Elden Ring starting class
+    usage: /eldenclass [open|list|info|choose|current|reset]
+  level:
+    description: Show your level and upgrade attributes using runes
+    usage: /level [up]
+  weapon:
+    description: Manage and give custom Elden Ring weapons
+    usage: /weapon <give|list> [id] [player]
+  smithing:
+    description: Manage smithing, stones and custom smithing anvils
+    usage: /smithing <info|set|anvil|stone>
+  armor:
+    description: Manage and give custom Elden Ring armor
+    usage: /armor <give|list> [id] [player]
+  profile:
+    description: Open your player profile and derived stats
+    usage: /profile
+    aliases: [player]
+  ash:
+    description: Manage and give Ashes of War
+    usage: /ash <give|list> [id] [player]
+  spell:
+    description: Manage and give spell tomes
+    usage: /spell <give|list> [id] [player]
+  spiritash:
+    description: Manage and give Spirit Ashes
+    usage: /spiritash <give|list> [id] [player]
+    aliases: [spirit]
+  spiritspring:
+    description: Manage Elden Ring spirit springs
+    usage: /spiritspring <set|remove|rename|tp|reload|list|info|nearest>
+    aliases: [sspring]
+  talisman:
+    description: Manage and equip Elden Ring talismans
+    usage: /talisman [open|list|equip|unequip|give]
+  torrent:
+    description: Gives you the Spectral Steed Whistle
+    usage: /torrent
+  boss:
+    description: Manage and spawn custom bosses
+    usage: /boss <spawn|list|station|remembrance|despawn|setspawn|removespawn|setportalentrance|setportalexit|setportalexitlock|setportalboss|portalinfo|removeportal>
+  enemy:
+    description: Manage Elden-style overworld enemies and enemy spawners
+    usage: /enemy <list|spawn|spawner>
+
+permissions:
+  elden.grace.use:
+    description: Allows using Sites of Grace
+    default: true
+  elden.grace.gui:
+    description: Allows opening the Grace GUI at campfires
+    default: true
+  elden.grace.warp:
+    description: Allows right-click warping in the Grace GUI
+    default: op
+  elden.grace.admin:
+    description: Allows creating and removing Sites of Grace
+    default: op
+  elden.runes.use:
+    description: Allows viewing personal runes
+    default: true
+  elden.runes.admin:
+    description: Allows managing player rune values
+    default: op
+  elden.combat.use:
+    description: Allows using the dodge and stamina system
+    default: true
+  elden.compass.use:
+    description: Allows viewing the direction boss bar
+    default: true
+  elden.flask.use:
+    description: Allows using Crimson and Cerulean Flasks
+    default: true
+  elden.class.use:
+    description: Allows viewing and choosing Elden classes
+    default: true
+  elden.class.admin:
+    description: Allows resetting player Elden classes
+    default: op
+  elden.level.use:
+    description: Allows using the level system
+    default: true
+  elden.weapon.admin:
+    description: Allows giving custom weapons to players
+    default: op
+  elden.smithing.use:
+    description: Allows using placed smithing anvils
+    default: true
+  elden.smithing.admin:
+    description: Allows managing smithing items and forced upgrades
+    default: op
+  elden.armor.admin:
+    description: Allows giving custom armor to players
+    default: op
+  elden.player.gui:
+    description: Allows viewing and using the player profile GUI
+    default: true
+  elden.ash.admin:
+    description: Allows giving Ashes of War to players
+    default: op
+  elden.spell.admin:
+    description: Allows giving spell tomes to players
+    default: op
+  elden.spirit.use:
+    description: Allows summoning Spirit Ashes
+    default: true
+  elden.spirit.admin:
+    description: Allows giving Spirit Ashes to players
+    default: op
+  elden.spiritspring.use:
+    description: Allows listing and inspecting spirit springs
+    default: true
+  elden.spiritspring.admin:
+    description: Allows creating and removing spirit springs
+    default: op
+  elden.talisman.use:
+    description: Allows using the talisman pouch
+    default: true
+  elden.talisman.admin:
+    description: Allows giving talismans to players
+    default: op
+  elden.mount.torrent:
+    description: Allows summoning Torrent
+    default: true
+  elden.mount.admin:
+    description: Allows giving the Spectral Steed Whistle
+    default: op
+  elden.boss.admin:
+    description: Allows spawning and despawning bosses
+    default: op
+  elden.enemy.admin:
+    description: Allows spawning enemies and managing enemy spawners
+    default: op

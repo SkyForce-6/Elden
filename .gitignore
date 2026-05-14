@@ -1,0 +1,28 @@
+# Text & Docs
+*.md
+*.txt
+*.pdf
+
+# Build output
+build/
+out/
+.gradle/
+*.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle wrapper jar (optional – keep .bat/.sh)
+gradle/wrapper/gradle-wrapper.jar
+
+# Run folder
+run/
+
